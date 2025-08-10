@@ -110,7 +110,9 @@ const App = () => {
             />
 
             <div className="flex flex-col items-center">
-              <h2 className="text-2xl font-bold mb-2 text-white">Best G@dget</h2>
+              <h2 className="text-2xl font-bold mb-2 text-white">
+                Best G@dget
+              </h2>
               <p className="text-blue-100 mb-6 max-w-md text-center px-4">
                 As an Amazon Associate, I earn from qualifying purchases
               </p>
@@ -186,7 +188,9 @@ const App = () => {
             {isSearching ? (
               <span>
                 Showing search results for{" "}
-                <span className="font-semibold text-white">"{searchQuery}"</span>
+                <span className="font-semibold text-white">
+                  "{searchQuery}"
+                </span>
               </span>
             ) : (
               <span>Showing all {displayProducts.length} products</span>
@@ -297,7 +301,9 @@ const App = () => {
                     {product.productName}
                   </h3>
                   <div className="mt-3 flex justify-between items-center">
-                    <span className="text-xs text-blue-200">Affiliate Link</span>
+                    <span className="text-xs text-blue-200">
+                      Affiliate Link
+                    </span>
                     {/* <span className="text-blue-300 text-sm font-medium">
                       View Deal →
                     </span> */}
