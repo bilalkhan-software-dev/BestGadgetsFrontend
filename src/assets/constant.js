@@ -1,0 +1,1 @@
+export const APP_BASE_URL = "https://best-gadget-production.up.railway.app/api/v1";
