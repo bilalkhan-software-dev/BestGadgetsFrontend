@@ -208,9 +208,29 @@ const App = () => {
 
       {/* Error state */}
       {error && (
-        <div className="bg-red-900/70 border border-red-500 text-red-100 px-4 py-3 rounded mx-auto max-w-2xl mb-6 text-center backdrop-blur-sm">
-          Error: {error}
-        </div>
+        <>
+          {" "}
+          <div className="bg-red-900/70 border-4 border-red-500 text-red-100 px-4 py-3 rounded-xl mx-auto max-w-2xl mb-6 text-center backdrop-blur-sm">
+            Error: {error}
+          </div>
+          <div className="bg-gray-900/70 border-4 border-blue-500 shadow-blue-400 shadow-2xl/100 text-white px-4 py-3 rounded-xl mx-auto max-w-2xl mb-6 text-center">
+            You are seeing this error because the backend server is currently
+            unavailable or has crashed. If you reached this page through my
+            portfolio to view the project overview, you can still check it out
+            through the following video link below:
+            <div className="text-center m-4">
+              <a
+                href="https://drive.google.com/file/d/1nD1EUcngafzPhCvxpXRxB-dWurptSLqq/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-l from-blue-400 to-blue-800 px-6 py-2 rounded-lg text-white font-semibold shadow-md hover:from-blue-800 hover:to-blue-400 transition duration-200"
+                aria-label="Overview link"
+              >
+                Overview Link
+              </a>
+            </div>
+          </div>
+        </>
       )}
 
       {/* Product grid */}
